@@ -14,13 +14,23 @@ logging.info('Starting Bot...')
 def start_command(update, context):
     update.message.reply_text('Hello there! I\'m a bot. What\'s up?')
 
-
 def help_command(update, context):
     update.message.reply_text('Try typing anything and I will do my best to respond!')
 
-
 def custom_command(update, context):
     update.message.reply_text('This is a custom command, you can add whatever text you want here.')
+
+def greeting_command(update, context):
+    update.message.reply_text('Hi, how can I assist you today?')
+
+def farewell_command(update, context):
+    update.message.reply_text('Goodbye! Have a great day!')
+
+def joke_command(update, context):
+    update.message.reply_text('Why don\'t scientists trust atoms? Because they make up everything!')
+
+def fact_command(update, context):
+    update.message.reply_text('Did you know? The first computer was invented in the 1940s.')
 
 
 def handle_message(update, context):
